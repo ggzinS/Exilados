@@ -1,0 +1,1 @@
+Cara essa é minha parte, a área do front toda a interface e layout vou fazer nesa estrutura de pastas aqui blz?
