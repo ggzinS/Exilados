@@ -1,1 +1,1 @@
-Vamo começar a brincadeira
+Conseguir resolver graças a Deus
