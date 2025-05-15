@@ -1,0 +1,1 @@
+(👉ﾟヮﾟ)👉 Essa parte aqui envolve todo o projeto então fiquemos a vontade* 👈(ﾟヮﾟ👈)
