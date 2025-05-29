@@ -3,14 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
+    font-family: 'Montserrat', sans-serif;
+    color: #d1baaa;
     background: linear-gradient(to bottom, #d1baaa, #cb6ce6, #8c08aa);
-    color: black;
+    color: #d1baaa;
     font-size: 16px;
 }
-header {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
+
+header .fundodecabeçalho .logotitle {
+    width: 100%;
+    height: 650px;
+
+    background-image: url(/src/css/images/backgroundhome2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: scroll;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #d1baaa;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+    & img {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 1000;
+        width: 210px;
+    }
+    
+    .title {
+        & h1 {
+            font-size: 150px;
+            font-weight: normal;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & h2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
