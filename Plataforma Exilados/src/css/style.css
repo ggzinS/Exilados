@@ -10,14 +10,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #d1baaa;
-    background: linear-gradient(to bottom, #d1baaa, #cb6ce6, #8c08aa);
+    background: linear-gradient(to bottom, #d1baaa, #cb6ce6, #771acd);
     font-size: 16px;
 }
 
 header .fundodecabeçalho {
     /*Costumização do primeiro cabeçalho*/
     width: 100%;
-    height: 670px;
+    height: 695px;
 
     /*Ajustes de posição e costumização de background*/
     background-image: linear-gradient(rgba(209, 186, 170, 0.681), rgba(0, 0, 0, 0.242)), url(/src/css/images/backgroundhome.jpg);
@@ -69,17 +69,51 @@ header .fundodecabeçalho {
             justify-content: center;
             align-items: center;
         }
-
-        & video {
-            font-size: 150px;
-            font-weight: normal;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
     }
 }
 
+/*Seta animada*/
+.setaanimada .icon{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Seção de busca*/
+.inicio .hub{
+    & h1{
+        width: 200px;
+        height: 170px;
+        font-size: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-left: 50px;
+
+        text-shadow:;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animação simples do background*/
 @keyframes carrousel-background {
 
     /*Key frames*/
