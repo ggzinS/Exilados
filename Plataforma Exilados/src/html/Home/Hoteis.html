@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotéis</title>
+    <link rel="stylesheet" href="/src/css/hoteis-styles.css">
+    <script src="/src/js/hoteis-script.js"></script>
+
+    <!--Link pra costum da ia-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!--Barra lateral-->
+        <div class="barra-lateral">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!--Menu Cabeçalho-->
+        <nav class="Menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="trilhas.html">Trilhas</a></li>
+                <li><a href="/src/html/ex.html">Sobre</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <img src="/src/css/images/logo.png" alt="Logo do site">
+            <h2>Exilados.com</h2>
+            <div>
+    </header>
+
+    <!--Filtro da IA-->
+    <main>
+        <section class="filtro-de-busca-principal">
+            <div class="container">
+                <form class="busca">
+                    <div class="input-grupo">
+                        <label for="local">Seu lugar</label>
+                        <input type="text" list="locais" id="local" name="local"
+                            placeholder="Digite um endereço ou local">
+                        <datalist id="locais">
+                            <option value="Rio de Janeiro, Brasil"></option>
+                            <option value="São Paulo, Brasil"></option>
+                            <option value="Belo Horizonte, Brasil"></option>
+                            <option value="Salvador, Brasil"></option>
+                            <option value="Fortaleza, Brasil"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="input-grupo">
+                        <label for="agendamento">Agendamento</label>
+                        <input type="date" id="agendamento" name="agendamento">
+                    </div>
+
+                    <div class="input-grupo">
+                        <label for="viajantes">Viajantes: <span id="viajantes-value">1</span></label>
+                        <input type="range" id="viajantes" name="viajantes" min="1" max="10" value="1">
+                    </div>
+
+                    <button type="submit" class="botão-busca">Pesquisar</button>
+                </form>
+            </div>
+        </section>
+
+        <section style="margin-top: 50px; padding: 20px; background-color: #fff; border-radius: 8px;">
+            <h2>Bem-vindo à página de Hotéis!</h2>
+            <p>Aqui você encontrará as melhores opções de hospedagem para a sua viagem.</p>
+        </section>
+    </main>
+
+    <!--Script adiciona viajantes-->
+    <script src="/src/js/hoteis-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const viajantesInput = document.getElementById('viajantes');
+            const viajantesValueSpan = document.getElementById('viajantes-value');
+
+            if (viajantesInput && viajantesValueSpan) {
+                // Atualiza o span com o valor inicial
+                viajantesValueSpan.textContent = viajantesInput.value;
+
+                // Atualiza o span sempre que o valor do range mudar
+                viajantesInput.addEventListener('input', function () {
+                    viajantesValueSpan.textContent = this.value;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

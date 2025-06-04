@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /*Configurações principais da página*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to top, #d1baaa, #cb6ce6, #771acd);
+}
+
+header {
+    /*Confiurações principais do menu*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffdfca;
+    padding: 0.5px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+
+    /*Estilização*/
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Configurações e estilização da navegação*/
+header nav {
+    margin-left: 60px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #771acd;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/**/
+header nav ul li a:hover {
+    color: #ffffff;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+    margin-left: auto;
+    color: black;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+.barra-lateral {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #771acd;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 55px;
+    flex-shrink: 0;
+}
+
+/* --- Estilos para a Seção de Filtro de Busca --- */
+.filtro-de-busca-principal {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o contêiner de busca na página */
+    align-items: flex-start;
+    /* Se você quiser que o filtro esteja em um ponto específico,
+       pode usar 'position: relative;' no body e 'position: absolute;' aqui,
+       mas 'margin-top' é mais simples para começar. */
+    margin-top: 0px;
+    /* Ajuste para posicionar abaixo do header fixo */
+    padding: 20px;
+    /* Espaçamento interno da seção, se desejar */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fundo branco com leve transparência */
+    border-radius: 15px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidade */
+    margin-top: 100px;
+    padding: 30px;
+    /* Espaçamento interno do contêiner */
+    width: 90%;
+    /* Largura do contêiner */
+    max-width: 800px;
+    /* Largura máxima para telas maiores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busca {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem a linha em telas menores */
+    gap: 20px;
+    /* Espaçamento entre os grupos de input */
+    justify-content: center;
+    /* Centraliza os inputs dentro do form */
+    width: 100%;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+    /* Label acima do input */
+    flex: 1 1 200px;
+    /* Faz com que os grupos de input ocupem espaço e quebrem linha */
+    min-width: 180px;
+    /* Largura mínima para os campos */
+}
+
+.input-grupo label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-grupo input[type="text"],
+.input-grupo input[type="date"],
+.input-grupo input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Cantos arredondados para os inputs */
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    outline: none;
+    /* Remove a borda de foco padrão */
+}
+
+.input-grupo input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.input-grupo input[type="range"] {
+    /* Estilos específicos para o slider */
+    -webkit-appearance: none;
+    /* Remove estilo padrão do Chrome/Safari */
+    appearance: none;
+    height: 8px;
+    /* Altura da barra do slider */
+    background: #ddd;
+    /* Cor da barra */
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.input-grupo input[type="range"]:hover {
+    opacity: 1;
+}
+
+/* Estilo do "thumb" (o círculo arrastável) do slider */
+.input-grupo input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    /* Tamanho do círculo */
+    height: 20px;
+    border-radius: 50%;
+    background: #cb6ce6;
+    /* Cor do círculo (combinando com seu gradiente) */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-grupo input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #cb6ce6;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.botão-busca {
+    background-color: #771acd;
+    /* Cor do botão (parte do seu gradiente) */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    /* Cantos arredondados do botão */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-end;
+    /* Alinha o botão ao final do grupo de inputs */
+    margin-top: 25px;
+    /* Ajuste para alinhar com os outros inputs se necessário */
+}
+
+.botão-busca:hover {
+    background-color: #5d14a6;
+    /* Tom mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de "subir" um pouco */
+}
+
+/* --- Media Queries para Responsividade (Opcional, mas recomendado) --- */
+@media (max-width: 768px) {
+    .busca {
+        flex-direction: column;
+        /* Inputs empilham em telas menores */
+        gap: 15px;
+    }
+
+    .input-grupo {
+        flex: 1 1 100%;
+        /* Ocupa a largura total */
+    }
+
+    .botão-busca {
+        width: 100%;
+        /* Botão ocupa a largura total */
+        margin-top: 10px;
+    }
+}
