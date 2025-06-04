@@ -10,8 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #d1baaa;
-    background: linear-gradient(to bottom, #d1baaa, #cb6ce6, #771acd);
-    font-size: 16px;
+    background: linear-gradient(to top, #d1baaa, #cb6ce6, #771acd);
 }
 
 header .fundodecabeçalho {
