@@ -22,7 +22,7 @@ input{
     font-size: 15px;
 }
 
-button{
+.inputSubmit{
     background-color: purple;
     border: none;
     padding: 15px;
@@ -34,6 +34,6 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.inputSubmit:hover{
     background-color: #BF40BF;
 }

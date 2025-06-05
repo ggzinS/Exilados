@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
   <div class="telaCadastro">
-    <form action="cadastro-index.php" method="POST">
+    <form action="index.html" method="POST">
       <fieldset>
         <legend><b>Insira as informações necessárias</b></legend>
         <br>
