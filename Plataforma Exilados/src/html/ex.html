@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+</head>
+
 <body>
     <header>
         <button class="menu-toggle">
@@ -34,7 +36,8 @@
                 <form class="search-form">
                     <div class="input-group">
                         <label for="local">Seu lugar</label>
-                        <input type="text" list="locais" id="local" name="local" placeholder="Digite um endereço ou local">
+                        <input type="text" list="locais" id="local" name="local"
+                            placeholder="Digite um endereço ou local">
                         <datalist id="locais">
                             <option value="Rio de Janeiro, Brasil"></option>
                             <option value="São Paulo, Brasil"></option>
@@ -59,16 +62,110 @@
             </div>
         </section>
 
-        <section style="margin-top: 50px; padding: 20px; background-color: #fff; border-radius: 8px;">
-            <h2>Bem-vindo à página de Hotéis!</h2>
-            <p>Aqui você encontrará as melhores opções de hospedagem para a sua viagem.</p>
-        </section>
+        <!--Carrousel da IA-->
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="/src/css/images/Laplaza.jpeg" alt="Praia paradisíaca em La Plaza" class="card-image">
+                        <div class="hidden-images">
+                            <img src="/src/css/images/Laplaza.jpeg" alt="La Plaza - Imagem 1">
+                            <img src="/src/css/images/Laplaza2.jpeg" alt="La Plaza - Imagem 2">
+                            <img src="/src/css/images/Laplaza3.jpeg" alt="La Plaza - Imagem 3">
+                            <img src="/src/css/images/Laplaza4.jpeg" alt="La Plaza - Imagem 4">
+                        </div>
+                        <button class="nav-button prev-button">Anterior</button>
+                        <button class="nav-button next-button">Próximo</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>La Plaza</h3>
+                        <p class="location">Brasil, Fortaleza, CE</p>
+                        <p class="description">Resort com a frente pra praia</p>
+                        <div class="details">
+                            <div class="rating">
+                                <span class="label">Avaliação</span>
+                                <span class="value">9,4</span>
+                                <span class="reviews">600 avaliações</span>
+                            </div>
+                            <div class="price">
+                                <span class="current-price">R$ 1071,00</span>
+                                <span class="total-price">Total: R$ 2000,00</span>
+                                <span class="taxes">Impostos e taxas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="/src/css/images/Picodaneblina.jpeg" alt="Montanhas do Pico da Neblina"
+                            class="card-image">
+                        <div class="hidden-images">
+                            <img src="/src/css/images/Picodaneblina.jpeg" alt="Pico da Neblina - Imagem 1">
+                            <img src="/src/css/images/Picodanelbina2.jpeg" alt="Pico da Neblina - Imagem 2">
+                            <img src="/src/css/images/Picodaneblina3.jpeg" alt="Pico da Neblina - Imagem 3">
+                            <img src="/src/css/images/Picodaneblina4.jpeg" alt="Pico da Neblina - Imagem 4">
+                        </div>
+                        <button class="nav-button prev-button">Anterior</button>
+                        <button class="nav-button next-button">Próximo</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pico da Neblina</h3>
+                        <p class="location">Brasil, Amazonas</p>
+                        <p class="description">Aventura nas alturas</p>
+                        <div class="details">
+                            <div class="rating">
+                                <span class="label">Avaliação</span>
+                                <span class="value">9,1</span>
+                                <span class="reviews">450 avaliações</span>
+                            </div>
+                            <div class="price">
+                                <span class="current-price">R$ 850,00</span>
+                                <span class="total-price">Total: R$ 1500,00</span>
+                                <span class="taxes">Impostos e taxas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="/src/css/images/Ouropreto.jpg" alt="Cidade histórica de Ouro Preto"
+                            class="card-image">
+                        <div class="hidden-images">
+                            <img src="/src/css/images/Ouropreto.jpg" alt="Ouro Preto - Imagem 1">
+                            <img src="/src/css/images/Ouropreto2.jpeg" alt="Ouro Preto - Imagem 2">
+                            <img src="/src/css/images/Ouropreto3.jpg" alt="Ouro Preto - Imagem 3">
+                            <img src="/src/css/images/Ouropreto4.jpg" alt="Ouro Preto - Imagem 4">
+                        </div>
+                        <button class="nav-button prev-button">Anterior</button>
+                        <button class="nav-button next-button">Próximo</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ouro Preto</h3>
+                        <p class="location">Brasil, Minas Gerais</p>
+                        <p class="description">Caminhos da história</p>
+                        <div class="details">
+                            <div class="rating">
+                                <span class="label">Avaliação</span>
+                                <span class="value">9,6</span>
+                                <span class="reviews">720 avaliações</span>
+                            </div>
+                            <div class="price">
+                                <span class="current-price">R$ 980,00</span>
+                                <span class="total-price">Total: R$ 1800,00</span>
+                                <span class="taxes">Impostos e taxas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="/src/js/hoteis-script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const viajantesInput = document.getElementById('viajantes');
             const viajantesValueSpan = document.getElementById('viajantes-value');
 
@@ -77,11 +174,13 @@
                 viajantesValueSpan.textContent = viajantesInput.value;
 
                 // Atualiza o span sempre que o valor do range mudar
-                viajantesInput.addEventListener('input', function() {
+                viajantesInput.addEventListener('input', function () {
                     viajantesValueSpan.textContent = this.value;
                 });
             }
         });
     </script>
+    <script src="/src/js/carousel-sricpt.js"></script>
 </body>
+
 </html>
